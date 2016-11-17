@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<h1>Multi page Demo in spring mvc</h1>
+
+            First Name: <span th:text="${user.firstName}" /> <br/>
+            Last Name: <span th:text="${user.lastName}" /> <br/>
+            Email: <span th:text="${user.email}" /> <br/>
+
+            Address: <span th:text="${user.address}" />  <br/>
+            Country: <span th:text="${user.country}" /> <br/>
+            State: <span th:text="${user.state}" /> <br/>
+
+            <br/>
+            <a href="/doSomething">Start over again</a>
+
+</body>
+</html>

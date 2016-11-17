@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Multi page Demo</title>
+</head>
+<body>
+        <h1>Multi page Demo in spring mvc</h1>
+
+        <form action="#" th:action="@{/endSession}" th:object="${user}"  method="post">
+            First Name: <span th:text="${user.firstName}" /> <br/>
+            Last Name: <span th:text="${user.lastName}" /> <br/>
+            Email: <span th:text="${user.email}" /> <br/>
+
+            Address: <input type="text" th:field="*{address}" /> <br/>
+            Country: <input type="text" th:field="*{country}" /><br/>
+            State: <input type="text" th:field="*{state}" /><br/>
+
+            <a href="/">back</a> | <input type="submit" value="next"/>
+        </form>
+
+</body>
+</html>
